@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {{{title}}}
+        <style>
+          h1 {
+    color: #ffeecb;
+    font-family: serif;
+    
+}
+h2 {
+    color: #ffeecb;
+    font-family: serif;
+    
+}
+h3 {
+    color: #ffeecb;
+    font-family: serif;
+    
+}
+.eboard{
+  text-align: center;
+  font-size: 30px;
+}
+
+p{
+    color: #ffeecb;
+    font-family: serif;
+    max-width: 400px;
+}
+
+body {
+  background-color:#d03e51;
+  font-family: serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #8e443d;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #a41c2c;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: #fff0cb;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ec6c7c;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.left{
+  max-width: 400px;
+  float:left;
+  margin-right: 100px;
+  margin-left: 150px;
+}
+
+.right{
+  max-width: 400px;
+  float:right;
+  margin-right: 150px;
+  margin-left: 100px;
+  text-align: right;
+}
+
+.gallery{
+  max-width: 400px;
+  float:left;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+.interest{
+  max-width: 400px;
+  float:right;
+  margin-right: 150px;
+  margin-left: 100px;
+  text-align: right;
+}
+.interest2{
+  max-width: 400px;
+  float:right;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+
+.footer {
+  float: right;
+  text-align: right;
+  color: #ffeecb;
+  font-family: serif;
+  margin-right: 20px;
+}
+
+        </style>
+      </head>
+
+        <body>
+          <div class="navbar">
+		  <a href="index">Home</a>
+		  <a href="about">About</a>
+		  <a href="photos">Photo Gallery</a>
+		  <div class="dropdown">
+		    <button class="dropbtn">Events 
+		      <i class="fa fa-caret-down"></i>
+		    </button>
+		    <div class="dropdown-content">
+		      <a href="upcoming">Upcoming Events</a>
+		      <a href="past">Past Events</a>
+		    </div>
+		  </div> 
+		</div>
+        <br>
+        {{{body}}}
+        
+    </body>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous">
+		</script>
+
+		<script>
+    		window.jQuery || document.write('<script src="js/jquery-3.6.3.min.js"><\/script>')
+		</script>
+		
+		<script src="jQuery-script.js"></script>
+		<script src="jq-load.js"></script>
+    <script src="upcoming-data-xml.js"></script>
+    <script src="past-data-html.js"></script>
+		<script type="modernizr-custom.js"></script>
+    <script type="geolocation.js"></script>
+</html>
